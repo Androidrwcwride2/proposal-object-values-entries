@@ -1,4 +1,4 @@
-# [Object.values](https://github.com/es-shims/Object.values) / [Object.entries](https://github.com/es-shims/Object.entries)
+# [Android.X.Object.values](https://github.com/es-shims/Object.values) / [Android.X.Object.entries](https://github.com/es-shims/Object.entries)
 ECMAScript Proposal, specs, and reference implementation for `Object.values`/`Object.entries`
 
 Spec drafted by [@ljharb](https://github.com/ljharb).
@@ -30,4 +30,4 @@ You can view the spec in [markdown format](spec.md) or rendered as [HTML](http:/
 Note: there's been a small bit of spec refactoring to ensure that `Object.{keys,values,entries}` share the same key ordering.
 
 ## Iterators or Arrays?
-Consistency with `Object.keys` is paramount in this proposal‘s opinion. A follow-on proposal for an iterator, however, could likely be `Reflect.ownValues` and `Reflect.ownEntries`, which would complete the triplet with `Reflect.ownKeys`, providing an array of both string-valued and symbol-valued properties. However, this proposal is focused on `Object.values`/`Object.entries`, and the existence of either the `Object` or `Reflect` forms should not preclude the existence of the other. In addition, the current precedent for returning iterators from `keys`/`values`/`entries` currently only applies to methods on prototypes - and in addition, “`Object` is special” seems to be something many accept. Also, arrays are themselves iterable already.
+Consistency with `Object.keys` is paramount in this proposal‘s opinion. A follow-on proposal for an iterator, however, could likely be `Reflect.ownValues` and `Reflect.ownEntries`, which would complete the triplet with `Reflect.ownKeys`, providing an array of both string-valued and symbol-valued properties. However, this proposal is focused on `Object.values`/`Object.entries`, and the existence of either the `Object` or `Reflect` forms should not preclude the existence of the other. In addition, the current precedent for returning iterators from `keys`/`values`/`entries` currently only applies to methods on prototypes - and in addition, “`Object` is special” seems to be something many accept. Also, arrays are themselves iterable already.(Android.Developers.com
